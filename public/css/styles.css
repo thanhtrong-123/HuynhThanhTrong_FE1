@@ -1,0 +1,192 @@
+.header {
+    display: inline-block;
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    margin-top: 0px;
+    z-index: 99;
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    list-style: none;
+    margin-right: 0;
+    padding-right: 50px;
+    font-weight: bold;
+  }
+  
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link {
+    border-radius: 50px;
+    font-size: 12px;
+    color: #d04216 !important;
+    font-weight: 500;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #444444 !important;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+
+    color: rgb(216 112 63) !important;
+}
+
+.banner {
+    background: url("../image/bg2.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+.item-banner {
+    margin-top: 80px !important;
+}
+
+.content img {
+    width: 100%;
+}
+
+
+.item-NoiBat2 {
+    padding-top: 400px;
+    background: url("../image/noibat3.jpg");
+    background-size: cover;
+    width: 100%;
+}
+
+.content .item-NoiBat {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.content .item-NoiBat img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+.content .item-NoiBat img:hover {
+    transform: scale(1.1);
+}
+.item {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.btnShop{
+    background: #000;
+    text-decoration: none;
+    color: #fff;
+}
+.btnShop:hover{
+    background: #fff;
+    color: #000;
+    border: #000 solid 1px;
+}
+.product .original-price {
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: line-through;
+    margin-right: 10px;
+}
+.product .discounted-price {
+    color: #f77575;
+}
+.product .product-card {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.product .product-card img {
+    width: 100%;
+    height: auto;
+}
+.product .sale-badge {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    background-color: #ff708e;
+    color: white;
+    padding: 3px 10px;
+    font-size: 14px;
+    font-weight: bold;
+   
+}
+.countdown-overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 45px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+}
+.product-card:hover .countdown-overlay {
+    opacity: 0;
+}
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+.countdown div {
+    text-align: center;
+}
+.countdown span {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+}
+.countdown label {
+    font-size: 14px;
+    color: #666;
+}
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-container img.hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.product-card:hover .image-container img.hover-image {
+    opacity: 1;
+}
+
+.product-overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 70px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.product-card:hover .product-overlay {
+    opacity: 1;
+}
+
+.social-icons {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+  .social-icons li {
+    margin-right: 10px; /* Khoảng cách giữa các biểu tượng */
+  }
+
+  input[type="text"] {
+    padding: 10px;
+    
+  }
